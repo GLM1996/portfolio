@@ -6,20 +6,20 @@ export default function ContactMe() {
     {
       icon: <FaWhatsapp className="w-6 h-6 text-green-500" />,
       label: "WhatsApp",
-      link: "https://wa.me/1234567890", // Pon tu número real sin + ni espacios
-      display: "+1 234 567 890",
+      link: "https://wa.me/5358524424", // Pon tu número real sin + ni espacios
+      display: "+53 58524424",
     },
     {
       icon: <FaEnvelope className="w-6 h-6 text-purple-600" />,
       label: "Email",
       link: "mailto:tucorreo@example.com",
-      display: "tucorreo@example.com",
+      display: "estrellaglm96@gmail.com",
     },
     {
       icon: <FaPhone className="w-6 h-6 text-blue-600" />,
       label: "Teléfono",
-      link: "tel:+1234567890",
-      display: "+1 234 567 890",
+      link: "tel:+5358524424",
+      display: "+53 58524424",
     },
     {
       icon: <FaLinkedin className="w-6 h-6 text-blue-700" />,

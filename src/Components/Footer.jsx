@@ -8,13 +8,13 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start gap-2">
           <h3 className="text-xl font-semibold">Contáctame</h3>
           <div className="flex gap-4 text-lg">
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="hover:text-green-400">
+            <a href="https://wa.me/5358524424" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="hover:text-green-400">
               <FaWhatsapp />
             </a>
-            <a href="mailto:tucorreo@example.com" aria-label="Email" className="hover:text-purple-400">
+            <a href="mailto:estrellaglm96@gmail.com" aria-label="Email" className="hover:text-purple-400">
               <FaEnvelope />
             </a>
-            <a href="tel:+1234567890" aria-label="Teléfono" className="hover:text-blue-400">
+            <a href="tel:+5358524424" aria-label="Teléfono" className="hover:text-blue-400">
               <FaPhone />
             </a>
             <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-blue-600">
