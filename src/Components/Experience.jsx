@@ -6,33 +6,19 @@ export default function Experience() {
     const experiences = [
         {
             icon: <Briefcase className="w-6 h-6 text-purple-400" />,
-            role: "Desarrollador FullStack",
-            company: "Tech Solutions S.A.",
+            role: "Desarrollador Full Stack",
+            company: "Juan Carlos Carrera Realtor State",
             period: "2022 - Actualidad",
             description:
-                "Desarrollo de aplicaciones web escalables usando React, Node.js y MongoDB. Responsable del diseño de arquitectura front-end y despliegues en AWS.",
-        },
-        {
-            icon: <Code className="w-6 h-6 text-purple-400" />,
-            role: "Frontend Developer",
-            company: "Digital Creatives",
-            period: "2020 - 2022",
-            description:
-                "Diseño e implementación de interfaces con React y Tailwind CSS. Optimización de la experiencia de usuario y accesibilidad.",
-        },
-        {
-            icon: <Rocket className="w-6 h-6 text-purple-400" />,
-            role: "Practicante de Desarrollo",
-            company: "InnovaTech",
-            period: "2019 - 2020",
-            description:
-                "Colaboración en proyectos web con HTML, CSS y JavaScript. Aprendizaje de metodologías ágiles y herramientas de control de versiones.",
-        },
+                "Diseño y desarrollo de aplicaciones web embebidas utilizando React y Bootstrap para el front-end, y Node.js con Express en el back-end. Responsable de la integración con la API de Follow Up Boss, así como de la implementación y gestión de webhooks para automatizaciones mediante plataformas como Make y n8n, optimizando flujos de trabajo y procesos CRM. Además, desarrollé herramientas internas como calculadoras financieras interactivas usando HTML, CSS y JavaScript, facilitando tareas cotidianas del equipo comercial.",
+        }
+
+
     ]
 
     return (
         <section className="py-6 sm:py-20 px-6 sm:px-20 text-white" id='experiencia'>
-            <h2 className="text-3xl font-bold mb-12 text-purple-400">Experiencia Profesional</h2> 
+            <h2 className="text-3xl font-bold mb-12 text-purple-400">Experiencia Profesional</h2>
             <div className="relative pl-10">
                 <div className="absolute left-3 top-0 bottom-0 w-1 bg-purple-700 rounded-full"></div>
                 {experiences.map((exp, index) => (
