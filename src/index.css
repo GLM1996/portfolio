@@ -1,2 +1,5 @@
 @import "tailwindcss";
 
+#experiencia,#inicio {
+    scroll-margin-top: 80px;  /* Ajusta el valor según el alto de tu header */
+  }
