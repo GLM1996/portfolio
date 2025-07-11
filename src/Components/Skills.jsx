@@ -26,16 +26,16 @@ const baseSkills = [
 ];
 
 // Duplica el array 2 o 3 veces para que no se corte en pantallas grandes
-const skills = [...baseSkills, ...baseSkills, ...baseSkills];
+const skills = [...baseSkills, ...baseSkills, ...baseSkills,...baseSkills];
 
 export default function Skills() {
   return (
-    <div className="py-6 sm:py-20 px-6 sm:px-32 max-w-7xl mx-auto" id="habilidades">
+    <div className="py-6 sm:py-20 px-6 sm:px-20" id="habilidades">
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={30}
         loop={true}
-        speed={4000}
+        speed={2000}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
@@ -45,7 +45,7 @@ export default function Skills() {
       >
         {skills.map((skill, index) => (
           <SwiperSlide key={index} style={{ width: "auto" }}>
-            <div className="flex flex-col items-center min-w-max">
+            <div className="flex flex-col items-center p-0">
               {skill.icon}
               <span className="text-sm mt-2 text-gray-700 dark:text-gray-300">
                 {skill.name}
