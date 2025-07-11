@@ -30,7 +30,7 @@ const skills = [...baseSkills, ...baseSkills, ...baseSkills];
 
 export default function Skills() {
   return (
-    <div className="py-6 sm:py-20 px-6 sm:px-32 max-w-7xl mx-auto">
+    <div className="py-6 sm:py-20 px-6 sm:px-32 max-w-7xl mx-auto" id="habilidades">
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={30}
