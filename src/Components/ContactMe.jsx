@@ -53,7 +53,7 @@ export default function ContactMe() {
 
         {/* Imagen */}
         <motion.img
-          src="/trage.jpg"
+          src="/trage1.webp"
           alt="Contacto"
           className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-2xl object-cover"
           initial={{ opacity: 0, scale: 0.8 }}
