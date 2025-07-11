@@ -23,10 +23,16 @@ export default function Hero() {
 
                 <div className="flex gap-4">
                     <motion.a
-                        href="#contacto"
+                        href="#contáctame"
                         className="flex justify-center items-center bg-purple-600 hover:bg-purple-700 text-white py-2 px-5 rounded-2xl shadow-lg transition-all"
                         whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                        whileTap={{ scale: 0.95 }} 
+                        onClick={(e) => {
+                            e.preventDefault();
+                            document.querySelector('#contáctame').scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }}
                     >
                         Contáctame
                     </motion.a>
