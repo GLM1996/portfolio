@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+// Skills.jsx
 import {
   SiReact,
   SiJavascript,
@@ -9,8 +9,12 @@ import {
   SiBootstrap,
   SiTailwindcss,
 } from "react-icons/si";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
-const skills = [
+// Skills base
+const baseSkills = [
   { icon: <SiReact className="text-sky-400 w-12 h-12" />, name: "React" },
   { icon: <SiJavascript className="text-yellow-400 w-12 h-12" />, name: "JavaScript" },
   { icon: <SiNodedotjs className="text-green-500 w-12 h-12" />, name: "Node.js" },
@@ -21,30 +25,35 @@ const skills = [
   { icon: <SiTailwindcss className="text-sky-400 w-12 h-12" />, name: "TailwindCSS" },
 ];
 
-export default function Skills() {
-  const allSkills = [...skills, ...skills]; // duplicado para que no desaparezca
+// Duplica el array 2 o 3 veces para que no se corte en pantallas grandes
+const skills = [...baseSkills, ...baseSkills, ...baseSkills];
 
+export default function Skills() {
   return (
-    <div className="overflow-hidden py-6 sm:py-20 px-6 sm:px-32 max-w-6xl mx-auto box-border">
-      <motion.div
-        className="flex gap-6 sm:gap-12"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: 20,
-          ease: "linear",
+    <div className="py-6 sm:py-20 px-6 sm:px-32 max-w-7xl mx-auto">
+      <Swiper
+        slidesPerView={"auto"}
+        spaceBetween={30}
+        loop={true}
+        speed={4000}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
         }}
+        modules={[Autoplay]}
+        grabCursor={true}
       >
-        {allSkills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center min-w-max">
-            {skill.icon}
-            <span className="text-sm mt-2 text-gray-700 dark:text-gray-300">{skill.name}</span>
-          </div>
+        {skills.map((skill, index) => (
+          <SwiperSlide key={index} style={{ width: "auto" }}>
+            <div className="flex flex-col items-center min-w-max">
+              {skill.icon}
+              <span className="text-sm mt-2 text-gray-700 dark:text-gray-300">
+                {skill.name}
+              </span>
+            </div>
+          </SwiperSlide>
         ))}
-      </motion.div>
+      </Swiper>
     </div>
   );
-  
-  
 }

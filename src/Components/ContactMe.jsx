@@ -49,13 +49,13 @@ export default function ContactMe() {
       <h2 className="text-3xl font-bold mb-6 text-purple-400 text-center justify-center  flex md:text-left">
         Contáctame
       </h2>
-      <div className="flex flex-col md:flex-row items-center gap-12 bg-gray-700 rounded-2xl">
+      <div className="flex flex-col md:flex-row justify-around items-center gap-12 bg-gray-950 rounded-2xl py-2 md:py-4">
 
         {/* Imagen */}
         <motion.img
-          src="/avatar.svg"
+          src="/trage.jpg"
           alt="Contacto"
-          className="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-2xl object-cover flex-1"
+          className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-2xl object-cover"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
@@ -64,7 +64,7 @@ export default function ContactMe() {
 
         {/* Contenido */}
         <motion.div
-          className="flex flex-col gap-6 flex-1"
+          className="flex flex-col gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

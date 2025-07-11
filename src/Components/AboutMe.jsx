@@ -6,10 +6,10 @@ export default function AboutMe() {
       id="acerca-de-mí"
       className="py-6 sm:py-20 px-6 sm:px-20 text-white"
     >
-      <h2 className="text-3xl font-bold mb-12 text-purple-400">Acerca de Mí</h2>
+      <h2 className="text-3xl font-bold mb-12 text-purple-400">Acerca de Mi</h2>
 
       <motion.p
-        className="text-lg text-gray-400 leading-relaxed text-justify"
+        className="text-lg text-gray-400 leading-relaxed"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -22,7 +22,7 @@ export default function AboutMe() {
       </motion.p>
 
       <motion.p
-        className="text-lg text-gray-400 leading-relaxed mt-4 text-justify"
+        className="text-lg text-gray-400 leading-relaxed mt-4 "
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
