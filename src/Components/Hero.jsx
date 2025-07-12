@@ -55,7 +55,7 @@ export default function Hero() {
                 transition={{ duration: 1.2 }}
             >
                 <img
-                    src="/avatar.svg" // Cambia esto por tu imagen personal o un logo más profesional
+                    src="/avataaars.png" // Cambia esto por tu imagen personal o un logo más profesional
                     alt="Logo"
                     className="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-2xl object-cover"
                 />

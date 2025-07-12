@@ -58,9 +58,9 @@ export default function Projects() {
                 className={`w-full h-full object-cover transition-transform duration-500 ${hoveredIndex === index ? 'scale-110' : 'scale-100'}`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent" />
-              <div className="absolute bottom-4 left-4 flex items-center gap-3">
+              <div className="absolute bottom-4 left-4 flex justify-center items-center gap-3">
                 {project.icon}
-                <h3 className="text-sm md:text-xl font-bold text-white bg-gray-500/80 p-1 rounded-xl">{project.title}</h3>
+                <h3 className="text-sm md:text-xl font-bold text-white bg-gray-500/80 p-1 rounded-xl text-center">{project.title}</h3>
               </div>
             </div>
 
