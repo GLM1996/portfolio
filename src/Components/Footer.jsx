@@ -17,12 +17,14 @@ export default function Footer() {
             <a href="tel:+5358524424" aria-label="Teléfono" className="hover:text-blue-400">
               <FaPhone />
             </a>
+            {/*
             <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-blue-600">
               <FaLinkedin />
             </a>
             <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-gray-400">
               <FaGithub />
             </a>
+             */}
           </div>
         </div>
 

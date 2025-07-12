@@ -21,12 +21,12 @@ export default function ContactMe() {
       link: "tel:+5358524424",
       display: "+53 58524424",
     },
-    {
+    /*{
       icon: <FaLinkedin className="w-6 h-6 text-blue-700" />,
       label: "LinkedIn",
       link: "https://linkedin.com/in/tuusuario",
       display: "linkedin.com/in/tuusuario",
-    },
+    },*/
   ];
 
   const containerVariants = {
