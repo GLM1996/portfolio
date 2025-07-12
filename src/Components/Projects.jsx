@@ -66,7 +66,7 @@ export default function Projects() {
 
             {/* Contenido del proyecto */}
             <div className="p-5 flex-grow flex flex-col">
-              <p className="text-gray-700 dark:text-gray-300 text-base mb-4 flex-grow">
+              <p className="text-lg text-gray-400 leading-relaxed mb-4 flex-grow">
                 {project.description}
               </p>
 

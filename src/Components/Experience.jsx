@@ -39,7 +39,7 @@ export default function Experience() {
                         <div className="pl-8">
                             <h3 className="text-2xl font-semibold">{exp.role}</h3>
                             <p className="text-purple-300">{exp.company} · {exp.period}</p>
-                            <p className="text-gray-400 mt-2">{exp.description}</p>
+                            <p className="text-lg text-gray-400  leading-relaxed">{exp.description}</p>
                         </div>
                     </motion.div>
                 ))}
