@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
     return (
-        <header className="flex flex-col md:flex-row py-6 sm:py-20 px-6 sm:px-20 text-white min-h-[calc(100vh-80px)] items-center" id='inicio'>
+        <header className="flex flex-col md:flex-row py-6 sm:py-12 px-6 sm:px-20 text-white min-h-[calc(100vh-80px)] items-center" id='inicio'>
             {/* Texto */}
             <motion.div
                 className="flex flex-1 flex-col gap-6"

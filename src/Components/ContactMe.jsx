@@ -44,7 +44,7 @@ export default function ContactMe() {
   return (
     <section
       id="contáctame"
-      className="py-6 sm:py-20 px-6 sm:px-20 text-white"
+      className="py-6 sm:py-12 px-6 sm:px-20 text-white"
     >
       <h2 className="text-3xl font-bold my-12 text-purple-400">Contáctame</h2>
       <div className="flex flex-col md:flex-row justify-around items-center gap-12 bg-gray-950 rounded-2xl py-2 md:py-4">
