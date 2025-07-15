@@ -1,4 +1,4 @@
-import { Code,Calculator,CalendarDays } from "lucide-react";
+import { Code, Calculator, CalendarDays } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -38,56 +38,59 @@ export default function Projects() {
   ];
 
   return (
-    <div className="grid gap-8 md:grid-cols-3 py-6 sm:py-20 px-6 sm:px-20" id="proyectos">
+    <section className="py-6 sm:py-20 px-6 sm:px-20 text-white" id="proyectos">
       <h2 className="text-3xl font-bold my-12 text-purple-400">Proyectos</h2>
-      {projects.map((project, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: index * 0.2 }}
-          viewport={{ once: true }}
-          onMouseEnter={() => setHoveredIndex(index)}
-          onMouseLeave={() => setHoveredIndex(null)}
-        >
-          <div className="rounded-2xl shadow-lg overflow-hidden bg-white dark:bg-gray-900 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-            {/* Contenedor de la imagen con efecto hover */}
-            <div className="relative h-48 overflow-hidden">
-              <img
-                src={project.img}
-                alt={project.title}
-                className={`w-full h-full object-cover transition-transform duration-500 ${hoveredIndex === index ? 'scale-110' : 'scale-100'}`}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent" />
-              <div className="absolute bottom-4 left-4 flex justify-center items-center gap-3">
-                {project.icon}
-                <h3 className="text-sm md:text-xl font-bold text-white bg-gray-500/80 p-1 rounded-xl text-center">{project.title}</h3>
-              </div>
-            </div>
-
-            {/* Contenido del proyecto */}
-            <div className="p-5 flex-grow flex flex-col">
-              <p className=" text-gray-400 leading-relaxed mb-4 flex-grow">
-                {project.description}
-              </p>
-
-              <div className="mt-auto">
-                <div className="flex gap-2 flex-wrap text-sm text-purple-500 mb-2">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="bg-purple-100 dark:bg-purple-900/50 px-3 py-1 rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+      <div className="grid gap-8 md:grid-cols-3" >
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <div className="rounded-2xl shadow-lg overflow-hidden bg-white dark:bg-gray-900 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+              {/* Contenedor de la imagen con efecto hover */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={project.img}
+                  alt={project.title}
+                  className={`w-full h-full object-cover transition-transform duration-500 ${hoveredIndex === index ? 'scale-110' : 'scale-100'}`}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent" />
+                <div className="absolute bottom-4 left-4 flex justify-center items-center gap-3">
+                  {project.icon}
+                  <h3 className="text-sm md:text-xl font-bold text-white bg-gray-500/80 p-1 rounded-xl text-center">{project.title}</h3>
                 </div>
-                <span className="text-xs text-gray-500">{project.year}</span>
+              </div>
+
+              {/* Contenido del proyecto */}
+              <div className="p-5 flex-grow flex flex-col">
+                <p className=" text-gray-400 leading-relaxed mb-4 flex-grow">
+                  {project.description}
+                </p>
+
+                <div className="mt-auto">
+                  <div className="flex gap-2 flex-wrap text-sm text-purple-500 mb-2">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="bg-purple-100 dark:bg-purple-900/50 px-3 py-1 rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="text-xs text-gray-500">{project.year}</span>
+                </div>
               </div>
             </div>
-          </div>
-        </motion.div>
-      ))}
-    </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+
   );
 }
