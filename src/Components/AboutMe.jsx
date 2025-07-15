@@ -6,7 +6,7 @@ export default function AboutMe() {
       id="acerca-de-mí"
       className="py-6 sm:py-20 px-6 sm:px-20 text-white"
     >
-      <h2 className="text-3xl font-bold mb-12 text-purple-400">Acerca de Mi</h2>
+      <h2 className="text-3xl font-bold my-12 text-purple-400">Acerca de mí</h2>
 
       <motion.p
         className="text-lg text-gray-400  leading-relaxed"

@@ -38,7 +38,8 @@ export default function Projects() {
   ];
 
   return (
-    <div className="grid gap-8 md:grid-cols-2 py-6 sm:py-20 px-6 sm:px-20" id="proyectos">
+    <div className="grid gap-8 md:grid-cols-3 py-6 sm:py-20 px-6 sm:px-20" id="proyectos">
+      <h2 className="text-3xl font-bold my-12 text-purple-400">Proyectos</h2>
       {projects.map((project, index) => (
         <motion.div
           key={index}
@@ -66,7 +67,7 @@ export default function Projects() {
 
             {/* Contenido del proyecto */}
             <div className="p-5 flex-grow flex flex-col">
-              <p className="text-lg text-gray-400 leading-relaxed mb-4 flex-grow">
+              <p className=" text-gray-400 leading-relaxed mb-4 flex-grow">
                 {project.description}
               </p>
 
