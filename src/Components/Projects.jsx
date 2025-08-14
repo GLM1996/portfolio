@@ -1,6 +1,7 @@
-import { Code, Calculator, CalendarDays } from "lucide-react";
+import { Link, Calculator, CalendarDays, Bird } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { div } from "framer-motion/client";
 
 
 export default function Projects() {
@@ -13,7 +14,7 @@ export default function Projects() {
       description:
         `Esta herramienta está diseñada para ayudar a los compradores de vivienda a estimar con precisión sus pagos mensuales durante todo el plazo del préstamo, adaptándose a su presupuesto y necesidades financieras. Compatible con hipotecas convencionales y FHA`,
       technologies: ["HTML", "CSS", "JavaScript", "Boostrap"],
-      year: "2023",
+      year: "2024",
       img: "/mortgageCalculatorSimple.png" // Asegúrate de tener la imagen en la carpeta public
     },
     {
@@ -22,7 +23,7 @@ export default function Projects() {
       description:
         "Esta calculadora compara dos hipotecas en paralelo, mostrando pagos mensuales, intereses acumulados y gráficos de amortización, con opción de ajustar términos para encontrar la mejor opción según su presupuesto y necesidades financieras.",
       technologies: ["HTML", "CSS", "JavaScript", "Boostrap"],
-      year: "2023",
+      year: "2024",
       img: "/mortgageCalculator.png" // Asegúrate de tener la imagen en la carpeta public
     },
     {
@@ -31,8 +32,18 @@ export default function Projects() {
       description:
         "Este calendario interactivo, desarrollado en React, permite gestionar y visualizar todas las citas y reuniones de la empresa en una interfaz intuitiva. Ofrece una vista clara de la disponibilidad, conflictos de horarios y recordatorios automáticos. Sincronización en tiempo real, facilita la organización eficiente de la agenda corporativa.",
       technologies: ["React", "JavaScript", "Boostrap"],
-      year: "2023",
+      year: "2024",
       img: "/calendar.png" // Asegúrate de tener la imagen en la carpeta public
+    },
+    {
+      icon: <Bird className="w-8 h-8 text-purple-900" />,
+      title: "CubaAves",
+      description:
+        "Esta landing page, desarrollada en Next.js, permite explorar los principales lugares y aves endémicas de Cuba de manera interactiva. Ofrece información visual y detallada sobre cada especie y destino, mostrando rutas de recorridos, fotos y sonidos de las aves. Con un diseño intuitivo, facilita que los visitantes descubran y planifiquen sus tours de manera fácil y atractiva.",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      year: "2025",
+      img: "/cubaaves.webp", // Asegúrate de tener la imagen en la carpeta public
+      link: "https://cubaaves.vercel.app"
     },
     // ... tus otros proyectos
   ];
@@ -83,7 +94,25 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                  <span className="text-xs text-gray-500">{project.year}</span>
+                  <div className="flex flex-wrap justify-between items-center gap-2 mt-2">
+                    <span className="text-sm text-gray-400">{project.year}</span>
+                    {project.link && (
+                      <div className="flex items-center">
+                        <span><Link className="w-4 h-4 text-purple-900" /></span>
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-blue-400 hover:text-blue-500 hover:underline bg-gray-900 px-2 py-1 rounded-lg transition-colors duration-200"
+                        >
+
+                          {project.link}
+                        </a>
+                      </div>
+                    )}
+
+                  </div>
+
                 </div>
               </div>
             </div>
